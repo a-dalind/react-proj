@@ -1,0 +1,26 @@
+// Colors
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+$main-black: #000000;
+$main-white: #ffffff;
+
+// Animation
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+
+// Viewports
+$vp-400: 'max-width: 399px';
+$vp-768: 'max-width: 767px';
+$vp-1024: 'max-width: 1023px';
+$vp-1250: 'max-width: 1251px';
+
+// Fonts
+$font-family: 'Helvetica Neue', 'Arial', sans-serif;
+
+$font-size-m: 16px;
+$line-height-m: 24px;
+$font-m: $font-size-m / $line-height-m $font-family;
+
+$font-size-l: 24px;
+$line-height-l: 32px;
+$font-l: $font-size-l / $line-height-l $font-family;

@@ -1,0 +1,27 @@
+.appLink {
+	color: var(--primary-color);
+}
+
+.primary {
+}
+
+.navbar {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: '';
+		bottom: -4px;
+		left: -5%;
+		height: 2px;
+		width: 110%;
+		background-color: var(--accent-color);
+		transform: scale(0);
+		transition: all .25s;
+	}
+
+	&:hover:before,
+	&:focus:before {
+			transform: scale(1);
+	}
+}

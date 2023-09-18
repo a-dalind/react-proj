@@ -1,0 +1,19 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: var(--inverted-bg-color);
+	padding: 25px 20px;
+}
+
+.links {
+	margin-left: auto;
+}
+
+.link {
+	font: var(--font-m);
+	margin-left: 24px;
+}

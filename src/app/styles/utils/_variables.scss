@@ -16,6 +16,12 @@ $vp-1250: 'max-width: 1251px';
 	--color-carribean-green: #02c58b;
 	--color-electric-indigo: #6101ee;
 
+	// Sizes
+	--navbar-height: 80px;
+
+	--sidebar-width: 300px;
+	--sidebar-width-collapsed:  80px;
+
 	// Animation
 	--tf-default: ease;
 	--trans-default: 0.3s var(--tf-default);

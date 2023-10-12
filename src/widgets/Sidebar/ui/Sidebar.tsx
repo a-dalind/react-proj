@@ -1,23 +1,26 @@
-import {classNames} from "shared/lib/classNames/classNames";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useState } from 'react';
 import styles from './Sidebar.module.scss';
-import {useState} from "react";
 
 interface SidebarProps {
-	className?: string
+  className?: string
 }
 
-export const Sidebar = ({className}: SidebarProps) => {
-	const [collapsed, setCollapsed] = useState(false);
+export const Sidebar = ({ className }: SidebarProps) => {
+    const [collapsed, setCollapsed] = useState(false);
 
-	const onToggle = () => setCollapsed(prev => !prev);
+    const onToggle = () => setCollapsed((prev) => !prev);
 
-	return (
-		<div className={classNames(styles.sidebar, {[styles.collapsed]: collapsed}, [className])}>
+    return (
+        <div className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [className])}>
 
-			<button
-				onClick={onToggle}
-			>toggle</button>
+            <button
+                type="button"
+                onClick={onToggle}
+            >
+                toggle
+            </button>
 
-		</div>
-	);
+        </div>
+    );
 };

@@ -1,13 +1,13 @@
 .sidebar {
-	position: relative;
-	height: calc(100vh - var(--navbar-height));
-	background: var(--inverted-bg-color);
-	width: var(--sidebar-width);
-	transition: width 0.3s ease-in-out;
-	padding: 0 40px 20px;
+    position: relative;
+    height: calc(100vh - var(--navbar-height));
+    background: var(--inverted-bg-color);
+    width: var(--sidebar-width);
+    transition: width 0.3s ease-in-out;
+    padding: 0 40px 20px;
 }
 
 .collapsed {
-	width: var(--sidebar-width-collapsed);
-	padding: 0 20px 10px;
+    width: var(--sidebar-width-collapsed);
+    padding: 0 20px 10px;
 }

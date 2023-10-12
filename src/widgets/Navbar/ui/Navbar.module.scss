@@ -1,31 +1,31 @@
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 1280px;
-	margin: 0 auto;
-	width: 100%;
-	height: var(--navbar-height);
-	background-color: var(--inverted-bg-color);
-	padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--inverted-bg-color);
+    padding: 0 40px;
 }
 
 .links {
-	margin: 0 auto 0 26px;
+    margin: 0 auto 0 26px;
 }
 
 .link {
-	font: var(--font-m);
-	margin-left: 24px;
+    font: var(--font-m);
+    margin-left: 24px;
 }
 
 .switchers {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-items: end;
-	gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    gap: 24px;
 
-	button {
-		font: var(--font-s);
-	}
+    button {
+        font: var(--font-s);
+    }
 }

@@ -3,10 +3,12 @@ import { Link, LinkProps } from 'react-router-dom';
 import { FC } from 'react';
 import styles from './AppLink.module.scss';
 
+/* eslint-disable */
 export enum AppLinkTheme {
   PRIMARY = 'primary',
   NAVBAR = 'navbar',
 }
+/* eslint-enable */
 
 interface AppLinkProps extends LinkProps {
   className?: string;

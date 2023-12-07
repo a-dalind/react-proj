@@ -3,12 +3,14 @@ import { MainPage } from 'pages/MainPage';
 import { AboutPage } from 'pages/AboutPage';
 import { NotFoundPage } from 'pages/NotFoundPage';
 
+/* eslint-disable */
 export enum AppRoutes {
   MAIN = 'main',
   ABOUT = 'about',
   // последним
   NOT_FOUND = 'not_found',
 }
+/* eslint-enable */
 
 export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',

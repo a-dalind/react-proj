@@ -4,7 +4,8 @@ import styles from './Button.module.scss';
 
 /* eslint-disable */
 export enum ThemeButton {
-    CLEAR = 'clear'
+    CLEAR = 'clear',
+    BORDER = 'border'
 }
 
 /* eslint-enable */

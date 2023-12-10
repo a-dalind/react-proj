@@ -13,7 +13,10 @@ export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation();
 
     return (
-        <div className={classNames(styles.navbar, {}, [className])}>
+        <div
+            className={classNames(styles.navbar, {}, [className])}
+            data-testid="navbar"
+        >
             <div>LOGO</div>
 
             <div className={styles.links}>

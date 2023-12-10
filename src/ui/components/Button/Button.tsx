@@ -14,6 +14,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     theme?: ThemeButton;
 }
 
+/* eslint-disable */
 export const Button: FC<ButtonProps> = (props) => {
     const {
         className,
@@ -31,3 +32,4 @@ export const Button: FC<ButtonProps> = (props) => {
         </button>
     );
 };
+/* eslint-enable */

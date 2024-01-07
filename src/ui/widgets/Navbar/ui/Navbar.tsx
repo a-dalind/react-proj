@@ -9,27 +9,23 @@ interface NavbarProps {
   className?: string
 }
 
-export const Navbar = ({ className }: NavbarProps) => {
-    // const { t } = useTranslation();
+export const Navbar = ({ className }: NavbarProps) => (
+    <div
+        className={classNames(styles.navbar, {}, [className])}
+        data-testid="navbar"
+    >
+        {/* <div className={styles.links}> */}
+        {/*    <AppLink theme={AppLinkTheme.NAVBAR} to="/" className={styles.link}> */}
+        {/*        {t('Главная')} */}
+        {/*    </AppLink> */}
+        {/*    <AppLink theme={AppLinkTheme.NAVBAR} to="/about" className={styles.link}> */}
+        {/*        {t('О сайте')} */}
+        {/*    </AppLink> */}
+        {/* </div> */}
 
-    return (
-        <div
-            className={classNames(styles.navbar, {}, [className])}
-            data-testid="navbar"
-        >
-            {/*<div className={styles.links}>*/}
-            {/*    <AppLink theme={AppLinkTheme.NAVBAR} to="/" className={styles.link}>*/}
-            {/*        {t('Главная')}*/}
-            {/*    </AppLink>*/}
-            {/*    <AppLink theme={AppLinkTheme.NAVBAR} to="/about" className={styles.link}>*/}
-            {/*        {t('О сайте')}*/}
-            {/*    </AppLink>*/}
-            {/*</div>*/}
-
-            <div className={styles.switchers}>
-                <LangSwitcher />
-                <ThemeSwitcher />
-            </div>
+        <div className={styles.switchers}>
+            <LangSwitcher />
+            <ThemeSwitcher />
         </div>
-    );
-};
+    </div>
+);

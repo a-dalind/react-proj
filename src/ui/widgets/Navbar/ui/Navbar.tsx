@@ -17,8 +17,6 @@ export const Navbar = ({ className }: NavbarProps) => {
             className={classNames(styles.navbar, {}, [className])}
             data-testid="navbar"
         >
-            <div>LOGO</div>
-
             <div className={styles.links}>
                 <AppLink theme={AppLinkTheme.NAVBAR} to="/" className={styles.link}>
                     {t('Главная')}

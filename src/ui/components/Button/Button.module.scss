@@ -1,4 +1,8 @@
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: var(--font-s);
     cursor: pointer;
     border: 1px solid transparent;
     color: var(--primary-color);
@@ -16,4 +20,16 @@
 .border {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
+}
+
+.background {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+}
+
+.backgroundInverted {
+    background: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
 }

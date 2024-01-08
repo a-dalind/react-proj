@@ -13,8 +13,8 @@ $vp-1250: "max-width: 1251px";
 
     // Sizes
     --navbar-height: 80px;
-    --sidebar-width: 300px;
-    --sidebar-width-collapsed: 80px;
+    --sidebar-width: 500px;
+    --sidebar-width-collapsed: 144px;
 
     // Animation
     --tf-default: ease;
@@ -22,13 +22,13 @@ $vp-1250: "max-width: 1251px";
 
     // Fonts
     --font-family: "Helvetica Neue", "Arial", sans-serif;
-    --font-size-s: 16px;
-    --line-height-s: 24px;
+    --font-size-s: 20px;
+    --line-height-s: 28px;
     --font-s: var(--font-size-s) / var(--line-height-s) var(--font-family);
-    --font-size-m: 20px;
-    --line-height-m: 28px;
+    --font-size-m: 28px;
+    --line-height-m: 36px;
     --font-m: var(--font-size-m) / var(--line-height-m) var(--font-family);
-    --font-size-l: 24px;
-    --line-height-l: 32px;
+    --font-size-l: 36px;
+    --line-height-l: 42px;
     --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family);
 }

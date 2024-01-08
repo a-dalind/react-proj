@@ -5,7 +5,9 @@ import styles from './Button.module.scss';
 /* eslint-disable */
 export enum ThemeButton {
     CLEAR = 'clear',
-    BORDER = 'border'
+    BORDER = 'border',
+    BG = 'background',
+    BG_INVERTED = 'backgroundInverted'
 }
 
 /* eslint-enable */
@@ -23,6 +25,11 @@ export const Button: FC<ButtonProps> = (props) => {
         children,
         ...otherProps
     } = props;
+
+    // const mods = {
+    //     [styles[theme]]: true
+    // }
+
     return (
         <button
             type="button"

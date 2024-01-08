@@ -1,5 +1,7 @@
 .sidebar {
     position: relative;
+    display: flex;
+    flex-direction: column;
     height: calc(100vh - var(--navbar-height));
     background: var(--inverted-bg-color);
     width: var(--sidebar-width);
@@ -9,5 +11,62 @@
 
 .collapsed {
     width: var(--sidebar-width-collapsed);
-    padding: 0 20px 10px;
+}
+
+.burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+
+    svg path {
+        stroke: var(--secondary-color);
+    }
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 12px;
+    align-items: center;
+
+    span {
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.collapsed {
+    .item span {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+
+.switchers {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 24px;
+    margin-top: auto;
 }

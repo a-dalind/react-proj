@@ -38,3 +38,16 @@ BorderDark.args = {
     theme: ThemeButton.BORDER,
 };
 BorderDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const Background = Template.bind({});
+Background.args = {
+    children: 'Text',
+    theme: ThemeButton.BG,
+};
+
+export const BackgroundInverted = Template.bind({});
+BackgroundInverted.args = {
+    children: 'Text',
+    theme: ThemeButton.BG_INVERTED,
+};
+BackgroundInverted.decorators = [ThemeDecorator(Theme.DARK)];

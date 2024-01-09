@@ -4,7 +4,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { Loader } from './Loader';
 
 export default {
-    title: 'ui/widgets/Loader',
+    title: 'ui/widgets/Layout',
     component: Loader,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -12,7 +12,7 @@ export default {
 } as ComponentMeta<typeof Loader>;
 
 // @ts-ignore
-// eslint-disable-next-line react/jsx-props-no-spreading
+
 const Template: ComponentStory<typeof Loader> = (args) => <Loader {...args} />;
 
 export const Light = Template.bind({});

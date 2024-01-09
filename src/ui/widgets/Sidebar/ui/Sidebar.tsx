@@ -5,9 +5,10 @@ import BurgerOpened from 'app/images/icons/burger/burger-opened.svg';
 import BurgerClosed from 'app/images/icons/burger/burger-closed.svg';
 import SidebarHome from 'app/images/icons/sidebar/icon-home.svg';
 import SidebarAbout from 'app/images/icons/sidebar/icon-about.svg';
-import { LangSwitcher } from 'ui/widgets/LangSwitcher';
 import { AppLink, AppLinkTheme } from 'ui/components/AppLink/AppLink';
 import { RoutePath } from 'config/routeConfig/routeConfig';
+import { Button, ThemeButton } from 'ui/components/Button/Button';
+import { LangSwitcher } from 'ui/components/LangSwitcher';
 import styles from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -25,14 +26,14 @@ export const Sidebar = ({ className }: SidebarProps) => {
             data-testid="sidebar"
             className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [className])}
         >
-            <button
+            <Button
                 data-testid="sidebar-toggle"
-                type="button"
                 onClick={onToggle}
+                theme={ThemeButton.BG}
                 className={styles.burger}
             >
                 {collapsed ? <BurgerClosed /> : <BurgerOpened />}
-            </button>
+            </Button>
 
             <div className={styles.items}>
                 <AppLink

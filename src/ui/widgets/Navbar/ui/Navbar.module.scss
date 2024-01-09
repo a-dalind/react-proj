@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     max-width: 1280px;
     margin: 0 auto;
@@ -11,7 +11,7 @@
 }
 
 .links {
-    margin: 0 auto 0 26px;
+    margin-right: 24px;
 }
 
 .link {

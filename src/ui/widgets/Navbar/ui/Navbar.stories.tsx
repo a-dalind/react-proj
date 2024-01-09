@@ -11,7 +11,6 @@ export default {
     },
 } as ComponentMeta<typeof Navbar>;
 
-// eslint-disable-next-line react/jsx-props-no-spreading
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
 export const Light = Template.bind({});

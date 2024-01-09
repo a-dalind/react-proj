@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font: var(--font-s);
+    font: var(--font-m);
     cursor: pointer;
     border: 1px solid transparent;
     color: var(--primary-color);
@@ -24,12 +24,12 @@
 
 .background {
     background: var(--accent-color);
-    color: var(--bg-color);
+    color: var(--secondary-color);
     border: none;
 }
 
 .backgroundInverted {
-    background: var(--accent-color);
-    color: var(--bg-color);
+    background: var(--accent-color-second);
+    color: var(--secondary-color);
     border: none;
 }

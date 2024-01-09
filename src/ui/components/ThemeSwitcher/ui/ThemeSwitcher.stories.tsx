@@ -4,14 +4,13 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { ThemeSwitcher } from './ThemeSwitcher';
 
 export default {
-    title: 'ui/widgets/ThemeSwitcher',
+    title: 'ui/components/ThemeSwitcher',
     component: ThemeSwitcher,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
 } as ComponentMeta<typeof ThemeSwitcher>;
 
-// eslint-disable-next-line react/jsx-props-no-spreading
 const Template: ComponentStory<typeof ThemeSwitcher> = (args) => <ThemeSwitcher {...args} />;
 
 export const Light = Template.bind({});
